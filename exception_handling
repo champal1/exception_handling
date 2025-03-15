@@ -1,0 +1,19 @@
+def main():
+    try:
+        ask_num = int(input("Enter a number: "))
+        total = (10/ask_num)
+    except ValueError:
+        print("That is not a number, enter a number ")
+
+    except ZeroDivisionError:
+        print("You can not divide by zero, enter number ")
+
+    else:
+        print(f"The answer is {total}")
+
+    finally:
+        print("Program finished")
+
+
+if __name__ == "__main__":
+    main()
